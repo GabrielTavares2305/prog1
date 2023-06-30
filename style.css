@@ -1,0 +1,145 @@
+*{
+    margin: 0;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+}
+
+.container{
+    display: flex; 
+    align-items: center;
+}
+
+.sidebar{
+    width:280px;
+    background-color: #250055;
+    height: 100vh;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.sidebar ul{
+    list-style-type: none;
+    padding: 0;
+}
+
+
+.sidebar a{
+    text-decoration: none;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 20px;
+    color: #ffffff;
+    
+    
+}
+
+.sidebar li{
+    margin-bottom: 33px;
+}
+
+h1{
+    color: #250055;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 64px;
+    font-weight: 400;
+}
+
+h2{
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+    color: #666666;
+    margin-bottom: 40px;
+}
+
+p{
+   font-size: 20px;
+   font-weight: 400;
+   color: #666666;
+   margin-bottom: 43px; 
+}
+
+img{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 65px;    
+}
+
+.content{
+    margin-left: 50px;
+    width: 900px;
+}
+
+.content h2 a{
+    color: #250055;
+}
+
+.content img{
+    width: 35px;
+    height: 35px;
+}
+
+@media (max-width: 53.75rem){
+    .sidebar img{
+        width: 100px;
+    }
+
+    h1{
+        font-size: 40px;
+    }
+
+    h2{
+        font-size: 20px;
+    }
+
+    p{
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 650px){
+
+    .container{
+        flex-direction: column;
+    }
+
+    .sidebar{
+        height: 100px;
+        width: 100%;
+
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .sidebar img{
+        width: 70px;
+        margin: 0;
+    }
+
+    .sidebar ul{
+        display: flex;
+        align-items: center;
+    }
+
+    .sidebar li{
+        margin-bottom: 0;
+        margin-left: 15px;
+    }
+
+    .sidebar a{
+        font-size:  16px;
+    }
+
+    .content{
+        width: 90%;
+        margin-top: 30px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
